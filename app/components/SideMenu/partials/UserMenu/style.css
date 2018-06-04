@@ -1,0 +1,51 @@
+.user-menu {
+    background: #1A2230;
+    border-bottom: 1px solid #3a485b;
+    overflow-y: hidden;
+    transition: height .3s;
+}
+
+.top-bar {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 60px;
+}
+
+.name {
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #d9d9d9;
+    font-size: 18px;
+}
+
+.hamburger {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.menu-item {
+    position: relative;
+    height: 35px;
+    padding-left: 20px;
+    padding-top: 1px;
+    color: #9d9d9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-item:hover {
+    color: #cccccc;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 60px;
+    border-bottom: 1px solid #425b80;
+}
